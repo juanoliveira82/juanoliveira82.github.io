@@ -187,7 +187,8 @@
   }
 }
 
-#wrapper {
+/* Background with Gradient */
+#wrapper {  
   background: #4481eb;
   background: -moz-linear-gradient(#4481eb 0%, #04befe 100%);
   background: -webkit-linear-gradient(to top, #4481eb 0%, #04befe 100%);
@@ -196,12 +197,6 @@
   background: linear-gradient(to top, #4481eb 0%, #04befe 100%);
   background-image: linear-gradient(to top, #4481eb 0%, #04befe 100%);
   color: #fff;
-}
-
-.image-style {
-  max-width: 100%;
-
-  padding-bottom: 40px;
 }
 
 .main-content {
@@ -245,6 +240,10 @@
 .main-content .inner-content .content {
   color: #fff;
 }
+
+/*=================================================================*/
+/* [ Main Content - Home ]                                         */
+/*=================================================================*/
 
 .main-content#home .hanging .logo-hanging i,
 .main-content#home .hanging .text-hanging .word h6 > span {
@@ -357,6 +356,10 @@
   > span {
   color: #85cdfa;
 }
+
+/*=================================================================*/
+/* [ Main Content - About ]                                        */
+/*=================================================================*/
 
 .main-content#about .hanging .logo-hanging i,
 .main-content#about .hanging .text-hanging .word h6 > span {
@@ -498,20 +501,30 @@
   color: #a8a8a8;
 }
 
+/*=================================================================*/
+/* [ Main Content - Resume ]                                       */
+/*=================================================================*/
+
 .main-content#resume .hanging .logo-hanging i,
 .main-content#resume .hanging .text-hanging .word h6 > span {
   color: #4ebcf0;
 }
 
+.main-content#resume .inner-content .content #certificates > .row {
+  background: #232d48;
+}
+
+.main-content#resume .inner-content .content #certificates h5:after {
+  background: #4ebcf0;
+}
+
 .main-content#resume .inner-content .content .skills .row,
-.main-content#resume .inner-content .content .education .row,
 .main-content#resume .inner-content .content .experience .row,
 .main-content#resume .inner-content .content .fun-facts .row {
   background: #232d48;
 }
 
 .main-content#resume .inner-content .content .skills h5:after,
-.main-content#resume .inner-content .content .education h5:after,
 .main-content#resume .inner-content .content .experience h5:after,
 .main-content#resume .inner-content .content .fun-facts h5:after {
   background: #4ebcf0;
@@ -523,12 +536,6 @@
   .skills
   .single-skills-wrapper
   .skills-heading,
-.main-content#resume
-  .inner-content
-  .content
-  .education
-  .single-education
-  .education-when-where,
 .main-content#resume
   .inner-content
   .content
@@ -545,7 +552,6 @@
   .skills
   .single-skills-wrapper
   > ul,
-.main-content#resume .inner-content .content .education .single-education > ul,
 .main-content#resume
   .inner-content
   .content
@@ -555,14 +561,6 @@
   border-color: #182137;
 }
 
-.main-content#resume
-  .inner-content
-  .content
-  .education
-  .single-education
-  ul
-  ul
-  .education-body,
 .main-content#resume
   .inner-content
   .content
@@ -582,15 +580,6 @@
   ul
   .single-skill
   .skill-name
-  i,
-.main-content#resume
-  .inner-content
-  .content
-  .education
-  .single-education
-  ul
-  ul
-  .education-name
   i,
 .main-content#resume
   .inner-content
@@ -708,6 +697,99 @@
   color: #a8a8a8;
 }
 
+/* Certificates */
+
+.main-content#resume
+  .inner-content
+  .content
+  #certificates
+  .certificates-item
+  .item-wrapper
+  .item {
+  border-color: #eff3f7;
+}
+
+.main-content#resume
+  .inner-content
+  .content
+  #certificates
+  .certificates-item
+  .item-wrapper
+  .item
+  .overlay {
+  background: rgba(24, 33, 55, 0.9);
+  border-color: #fff;
+}
+
+.main-content#resume
+  .inner-content
+  .content
+  #certificates
+  .certificates-item
+  .item-wrapper
+  .item
+  .overlay
+  .view-more {
+  background: #232d48;
+  border-color: #fff;
+  color: #fff;
+}
+
+.main-content#resume
+  .inner-content
+  .content
+  #certificates
+  .certificates-item
+  .item-wrapper
+  .item
+  .overlay
+  .view-more
+  > .back {
+  background: #182137;
+}
+
+.main-content#resume
+  .inner-content
+  .content
+  #certificates
+  .certificates-item
+  .item-wrapper
+  .item
+  .overlay
+  .view-more
+  > .front
+  > .value
+  > span,
+.main-content#resume
+  .inner-content
+  .content
+  #certificates
+  .certificates-item
+  .item-wrapper
+  .item
+  .overlay
+  .view-more
+  > .back
+  > .value
+  > span {
+  color: #04befe;
+}
+
+.main-content#resume
+  .inner-content
+  .content
+  #certificates
+  .certificates-item
+  .item-wrapper
+  .item
+  .overlay
+  .image-info
+  .certificate-name {
+  color: #04befe;
+}
+
+/* Download Resume Button Wrapper */
+
 .main-content#resume .inner-content .content .button-wrapper a {
   background: #232d48;
   border-color: #fff;
@@ -736,6 +818,10 @@
   > span {
   color: #f678a7;
 }
+
+/*=================================================================*/
+/* [ Main Content - Portfolio ]                                    */
+/*=================================================================*/
 
 .main-content#portfolio .hanging .logo-hanging i,
 .main-content#portfolio .hanging .text-hanging .word h6 > span {
@@ -928,56 +1014,6 @@
   > .back {
   background: #182137;
   color: #fff;
-}
-
-.main-content#contact .inner-content .content #contact-form .note p {
-  color: #a8a8a8;
-}
-
-.main-content#contact
-  .inner-content
-  .content
-  #contact-form
-  .form-wrapper
-  .form-group
-  button[type="submit"] {
-  color: #fff;
-  background: #232d48;
-  border-color: #fff;
-}
-
-.main-content#contact
-  .inner-content
-  .content
-  #contact-form
-  .form-wrapper
-  .form-group
-  button[type="submit"]
-  > .front
-  > .value
-  > span,
-.main-content#contact
-  .inner-content
-  .content
-  #contact-form
-  .form-wrapper
-  .form-group
-  button[type="submit"]
-  > .back
-  > .value
-  > span {
-  color: #f678a7;
-}
-
-.main-content#contact
-  .inner-content
-  .content
-  #contact-form
-  .form-wrapper
-  .form-group
-  button[type="submit"]
-  > .back {
-  background: #182137;
 }
 
 #right-wrapper {
