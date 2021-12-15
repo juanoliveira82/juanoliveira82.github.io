@@ -88,28 +88,6 @@
 		});
 	};
 
-	// Set Skill Progress
-	metronal.setSkillProgress = function() {
-		// Select skill
-		var skill = $('.single-skill');
-		for(var i = 0; i < skill.length; i++) {
-			if(skill.eq(i).find('.percentage')[0].textContent == '100%') {
-				skill
-					.eq(i)
-					.find('.progress-wrapper .progress')
-					.css({
-						'width': skill.eq(i).find('.percentage')[0].textContent,
-						'borderRight': 0
-					});
-			} else {
-				skill
-					.eq(i)
-					.find('.progress-wrapper .progress')
-					.css('width', skill.eq(i).find('.percentage')[0].textContent);
-			}
-		}
-	};
-
 	// Use TypeIt.js
 	metronal.useTypeIt = function() {
 		if(typeof TypeIt != 'undefined') {
@@ -156,7 +134,7 @@
 			var prevMainContentOff = metronal.mainContent.off, 
 				targetOff = metronal.mainContent.on,
 				targetOn;
-			if(currentTarget.className === "menu-link" || currentTarget.className === "close-menu-link" || currentTarget.id === "contact-button") {
+			if(currentTarget.className === "menu-link" || currentTarget.className === "close-menu-link") {
 				if(metronal.mainContent.list.includes(target)) {
 					targetOn = target;
 				} else {
@@ -165,7 +143,6 @@
 			} else {
 				return;
 			}
-
 
 			if(targetOn !== targetOff) {
 				$(prevMainContentOff).removeClass("scaleDownCenter");
@@ -178,55 +155,6 @@
 				metronal.mainContent.on = targetOn;
 			}
 		}
-	};
-
-	// Process Contact Form
-	metronal.processContactForm = function() {
-		var form = $('form[name="contact"]'),
-			message = $('.contact-msg'),
-			formData;
-
-		// Success Function
-		var doneFunc = function(response) {
-			message.text(response);
-			message
-				.removeClass('alert-danger')
-				.addClass('alert-success')
-				.fadeIn();
-			setTimeout(function() {
-				message.fadeOut();
-			}, 2400);
-			form.find('input:not([type="submit"]), textarea').val('');
-		};
-
-		// Fail Function
-		var failFunc = function(jqXHR, textStatus, errorThrown) {
-			if(jqXHR.status === 400) {
-				message.text(jqXHR.responseText);
-			} else {
-				message.text(jqXHR.statusText);
-			}
-			message
-				.removeClass('alert-success')
-				.addClass('alert-danger')
-				.fadeIn();
-			setTimeout(function() {
-				message.fadeOut();
-			}, 2400);
-		};
-
-		// Form On Submit 
-		form.on('submit', function(e) {
-			e.preventDefault();
-			formData = $(this).serialize();
-			$.ajax({
-				type: 'POST',
-				url: form.attr('action'),
-				data: formData
-			})
-			.done(doneFunc)
-			.fail(failFunc);
-		});
 	};
 
 	// Window On Resize
@@ -251,11 +179,6 @@
 		metronal.dynamicPage(e, $(this)[0].hash);
 	});
 
-	// Contact Button On Click
-	$("#contact-button").on("click", function(e) {
-		metronal.dynamicPage(e, $(this)[0].hash);
-	});
-
 	// Prevent Default 'a[href=""]' click
 	$('a[href="#"]').on('click', function (e) {
         e.preventDefault();
@@ -272,10 +195,8 @@
 		metronal.replaceVHeight(),
 		metronal.portfolioFilter.init(),
 		metronal.useMagnificPopup(),
-		metronal.setSkillProgress(),
 		metronal.progressAnimation(),
-		metronal.useTypeIt(),
-		metronal.processContactForm();
+		metronal.useTypeIt();
 	});
 
 })(jQuery);
