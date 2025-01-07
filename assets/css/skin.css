@@ -1,46 +1,3 @@
-/* ============================================================== */
-/* Template Name : Metronal - Personal Portfolio Page             */
-/* Author        : Rietts Andreas Ruff                            */
-/* Author URI    : https://themeforest.net/user/riettsruff        */
-/* Version       : 1.3                                            */
-/* ============================================================== */
-
-/* ============================================================== */
-/* Colors used in the buttons                                     */
-/* Color 1: #f678a7                                               */
-/* Color 2: #4ebcf0                                               */
-/* Color 3: #d291bc                                               */
-/* Color 4: #85cdfa                                               */
-/* ============================================================== */
-
-.project-popup {
-  background: #fff;
-}
-
-.project-popup .project-name {
-  border-bottom-color: #eee;
-  color: #232d48;
-}
-
-.project-popup .project-source {
-  background: #232d48;
-  color: #fff;
-}
-
-.project-popup .project-source > .back {
-  background: #182137;
-}
-
-.project-popup .project-source > .front > .value > span,
-.project-popup .project-source > .back > .value > span {
-  color: #04befe;
-}
-
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content .mfp-close {
-  background: #232d48;
-  color: #fff;
-}
-
 #pre-load {
   background: #14263a;
 }
@@ -203,14 +160,6 @@
   background: #182137;
 }
 
-.main-content .close-menu-link {
-  color: #a8a8a8;
-}
-
-.main-content .close-menu-link:hover {
-  color: #fff;
-}
-
 .main-content .hanging {
   background: #232d48;
 }
@@ -232,7 +181,6 @@
 }
 
 .main-content .inner-content .head-content span,
-.main-content .inner-content .head-content .passion,
 .main-content .inner-content .head-content .name {
   color: #04befe;
 }
@@ -250,293 +198,27 @@
   color: #04befe;
 }
 
-.main-content#home .inner-content .content .box-wrapper .inner-box-wrapper {
-  background: #232d48;
-  -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-  -moz-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-}
-
-.main-content#home
-  .inner-content
-  .content
-  .box-wrapper
-  .inner-box-wrapper:hover {
-  background: #343d59;
-}
-
-.main-content#home
-  .inner-content
-  .content
-  .box-wrapper:nth-of-type(1)
-  .inner-box-wrapper
-  .menu-link
-  .valign-center
-  i {
-  color: #f678a7;
-}
-
-.main-content#home
-  .inner-content
-  .content
-  .box-wrapper:nth-of-type(2)
-  .inner-box-wrapper
-  .menu-link
-  .valign-center
-  i {
-  color: #4ebcf0;
-}
-
-.main-content#home
-  .inner-content
-  .content
-  .box-wrapper:nth-of-type(3)
-  .inner-box-wrapper
-  .menu-link
-  .valign-center
-  i {
-  color: #d291bc;
-}
-
-.main-content#home
-  .inner-content
-  .content
-  .box-wrapper:nth-of-type(4)
-  .inner-box-wrapper
-  .menu-link
-  .valign-center
-  i {
-  color: #85cdfa;
-}
-
-.main-content#home
-  .inner-content
-  .content
-  .box-wrapper:nth-of-type(1)
-  .inner-box-wrapper
-  .menu-link
-  .valign-center
-  h5
-  > span {
-  color: #f678a7;
-}
-
-.main-content#home
-  .inner-content
-  .content
-  .box-wrapper:nth-of-type(2)
-  .inner-box-wrapper
-  .menu-link
-  .valign-center
-  h5
-  > span {
-  color: #4ebcf0;
-}
-
-.main-content#home
-  .inner-content
-  .content
-  .box-wrapper:nth-of-type(3)
-  .inner-box-wrapper
-  .menu-link
-  .valign-center
-  h5
-  > span {
-  color: #d291bc;
-}
-
-.main-content#home
-  .inner-content
-  .content
-  .box-wrapper:nth-of-type(4)
-  .inner-box-wrapper
-  .menu-link
-  .valign-center
-  h5
-  > span {
-  color: #85cdfa;
-}
-
-/*=================================================================*/
-/* [ Main Content - About ]                                        */
-/*=================================================================*/
-
-.main-content#about .hanging .logo-hanging i,
-.main-content#about .hanging .text-hanging .word h6 > span {
-  color: #f678a7;
-}
-
-.main-content#about .inner-content .content #personal-info .row,
-.main-content#about .inner-content .content #services .row {
-  background: #232d48;
-}
-
-.main-content#about .inner-content .content #personal-info h5:after,
-.main-content#about .inner-content .content #services h5:after {
-  background: #f678a7;
-}
-
-.main-content#about .inner-content .content #personal-info .summary {
-  color: #e5e5e5;
-}
-
-.main-content#about
-  .inner-content
-  .content
-  #personal-info
-  .profile
-  ul
-  li
-  .label
-  i {
-  color: #04befe;
-}
-
-.main-content#about
-  .inner-content
-  .content
-  #personal-info
-  .profile
-  ul
-  li
-  .value {
-  color: #d3d3d3;
-}
-
-.main-content#about
-  .inner-content
-  .content
-  #personal-info
-  .social-media
-  ul
-  li
-  a {
-  color: #232d48;
-  background: #fff;
-  border-color: #fff;
-}
-
-.main-content#about
-  .inner-content
-  .content
-  #personal-info
-  .social-media
-  ul
-  li
-  a
-  > .back {
-  background: #182137;
-  color: #fff;
-}
-
-.main-content#about
-  .inner-content
-  .content
-  #personal-info
-  .button-wrapper
-  .single-button
-  a {
-  background: #232d48;
-  color: #fff;
-}
-
-.main-content#about .inner-content .content .button-wrapper a > .back {
-  background: #182137;
-}
-
-.main-content#about
-  .inner-content
-  .content
-  .button-wrapper
-  a
-  > .front
-  > .value
-  > span,
-.main-content#about
-  .inner-content
-  .content
-  .button-wrapper
-  a
-  > .back
-  > .value
-  > span {
-  color: #f678a7;
-}
-
-.main-content#about
-  .inner-content
-  .content
-  #services
-  .single-service
-  ul
-  .service-number {
-  color: #f678a7;
-  background: #182137;
-}
-
-.main-content#about .inner-content .content #services .single-service > ul {
-  border-color: #182137;
-}
-
-.main-content#about
-  .inner-content
-  .content
-  #services
-  .single-service
-  ul
-  ul
-  .service-name
-  i {
-  color: #f678a7;
-}
-
-.main-content#about
-  .inner-content
-  .content
-  #services
-  .single-service
-  ul
-  ul
-  .service-body {
-  color: #a8a8a8;
-}
-
 /*=================================================================*/
 /* [ Main Content - Resume ]                                       */
 /*=================================================================*/
 
-.main-content#resume .hanging .logo-hanging i,
-.main-content#resume .hanging .text-hanging .word h6 > span {
-  color: #4ebcf0;
-}
-
-.main-content#resume .inner-content .content #certificates > .row {
+.main-content#home .inner-content .content #certificates > .row {
   background: #232d48;
 }
 
-.main-content#resume .inner-content .content #certificates h5:after {
+.main-content#home .inner-content .content #certificates h5:after {
   background: #4ebcf0;
 }
 
-.main-content#resume .inner-content .content .skills .row,
-.main-content#resume .inner-content .content .experience .row,
-.main-content#resume .inner-content .content .fun-facts .row {
+.main-content#home .inner-content .content .experience .row {
   background: #232d48;
 }
 
-.main-content#resume .inner-content .content .skills h5:after,
-.main-content#resume .inner-content .content .experience h5:after,
-.main-content#resume .inner-content .content .fun-facts h5:after {
+.main-content#home .inner-content .content .experience h5:after {
   background: #4ebcf0;
 }
 
-.main-content#resume
-  .inner-content
-  .content
-  .skills
-  .single-skills-wrapper
-  .skills-heading,
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   .experience
@@ -546,13 +228,13 @@
   background: #182137;
 }
 
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   .skills
   .single-skills-wrapper
   > ul,
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   .experience
@@ -561,7 +243,7 @@
   border-color: #182137;
 }
 
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   .experience
@@ -572,16 +254,7 @@
   color: #a8a8a8;
 }
 
-.main-content#resume
-  .inner-content
-  .content
-  .skills
-  .single-skills-wrapper
-  ul
-  .single-skill
-  .skill-name
-  i,
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   .experience
@@ -589,117 +262,13 @@
   ul
   ul
   .experience-name
-  i,
-.main-content#resume
-  .inner-content
-  .content
-  .fun-facts
-  .single-fun-fact
-  .fun-fact-body
-  i {
+  i{
   color: #04befe;
-}
-
-.main-content#resume
-  .inner-content
-  .content
-  .skills
-  .single-skills-wrapper
-  ul
-  .single-skill
-  ul
-  .percentage {
-  color: #a8a8a8;
-}
-
-.main-content#resume
-  .inner-content
-  .content
-  .skills
-  .single-skills-wrapper
-  ul
-  .single-skill
-  ul
-  .progress-wrapper {
-  border-color: #fff;
-}
-
-.main-content#resume
-  .inner-content
-  .content
-  .skills
-  .single-skills-wrapper
-  ul
-  .single-skill
-  ul
-  .progress-wrapper
-  .progress {
-  background: #182137;
-  background: -webkit-linear-gradient(
-    45deg,
-    #182137 25%,
-    transparent 25%,
-    transparent 50%,
-    #182137 50%,
-    #182137 75%,
-    transparent 75%,
-    transparent
-  );
-  background: -moz-linear-gradient(
-    45deg,
-    #182137 25%,
-    transparent 25%,
-    transparent 50%,
-    #182137 50%,
-    #182137 75%,
-    transparent 75%,
-    transparent
-  );
-  background: -ms-linear-gradient(
-    45deg,
-    #182137 25%,
-    transparent 25%,
-    transparent 50%,
-    #182137 50%,
-    #182137 75%,
-    transparent 75%,
-    transparent
-  );
-  background: -o-linear-gradient(
-    45deg,
-    #182137 25%,
-    transparent 25%,
-    transparent 50%,
-    #182137 50%,
-    #182137 75%,
-    transparent 75%,
-    transparent
-  );
-  background: linear-gradient(
-    45deg,
-    #182137 25%,
-    transparent 25%,
-    transparent 50%,
-    #182137 50%,
-    #182137 75%,
-    transparent 75%,
-    transparent
-  );
-  border-right-color: #fff;
-}
-
-.main-content#resume
-  .inner-content
-  .content
-  .fun-facts
-  .single-fun-fact
-  .fun-fact-value {
-  color: #a8a8a8;
 }
 
 /* Certificates */
 
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   #certificates
@@ -709,7 +278,7 @@
   border-color: #eff3f7;
 }
 
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   #certificates
@@ -721,7 +290,7 @@
   border-color: #fff;
 }
 
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   #certificates
@@ -735,7 +304,7 @@
   color: #fff;
 }
 
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   #certificates
@@ -748,7 +317,7 @@
   background: #182137;
 }
 
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   #certificates
@@ -760,7 +329,7 @@
   > .front
   > .value
   > span,
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   #certificates
@@ -775,7 +344,7 @@
   color: #04befe;
 }
 
-.main-content#resume
+.main-content#home
   .inner-content
   .content
   #certificates
@@ -788,79 +357,19 @@
   color: #04befe;
 }
 
-/* Download Resume Button Wrapper */
-
-.main-content#resume .inner-content .content .button-wrapper a {
-  background: #232d48;
-  border-color: #fff;
-  color: #fff;
-}
-
-.main-content#resume .inner-content .content .button-wrapper a > .back {
-  background: #182137;
-}
-
-.main-content#resume
-  .inner-content
-  .content
-  .button-wrapper
-  a
-  > .front
-  > .value
-  > span,
-.main-content#resume
-  .inner-content
-  .content
-  .button-wrapper
-  a
-  > .back
-  > .value
-  > span {
-  color: #f678a7;
-}
-
 /*=================================================================*/
 /* [ Main Content - Portfolio ]                                    */
 /*=================================================================*/
 
-.main-content#portfolio .hanging .logo-hanging i,
-.main-content#portfolio .hanging .text-hanging .word h6 > span {
-  color: #d291bc;
-}
-
-.main-content#portfolio .inner-content .content #projects > .row {
+.main-content#home .inner-content .content #projects > .row {
   background: #232d48;
 }
 
-.main-content#portfolio .inner-content .content #projects h5:after {
+.main-content#home .inner-content .content #projects h5:after {
   background: #d291bc;
 }
 
-.main-content#portfolio
-  .inner-content
-  .content
-  #projects
-  .portfolio-filter
-  ul
-  li
-  a {
-  color: #a8a8a8;
-}
-
-.main-content#portfolio
-  .inner-content
-  .content
-  #projects
-  .portfolio-filter
-  ul
-  li
-  a.current {
-  background: #182137;
-  color: #fff;
-  border-color: #fff;
-}
-
-.main-content#portfolio
+.main-content#home
   .inner-content
   .content
   #projects
@@ -870,7 +379,7 @@
   border-color: #eff3f7;
 }
 
-.main-content#portfolio
+.main-content#home
   .inner-content
   .content
   #projects
@@ -882,7 +391,7 @@
   border-color: #fff;
 }
 
-.main-content#portfolio
+.main-content#home
   .inner-content
   .content
   #projects
@@ -896,7 +405,7 @@
   color: #fff;
 }
 
-.main-content#portfolio
+.main-content#home
   .inner-content
   .content
   #projects
@@ -909,7 +418,7 @@
   background: #182137;
 }
 
-.main-content#portfolio
+.main-content#home
   .inner-content
   .content
   #projects
@@ -921,7 +430,7 @@
   > .front
   > .value
   > span,
-.main-content#portfolio
+.main-content#home
   .inner-content
   .content
   #projects
@@ -936,7 +445,7 @@
   color: #04befe;
 }
 
-.main-content#portfolio
+.main-content#home
   .inner-content
   .content
   #projects
@@ -947,75 +456,4 @@
   .image-info
   .project-name {
   color: #04befe;
-}
-
-.main-content#contact .hanging .logo-hanging i,
-.main-content#contact .hanging .text-hanging .word h6 > span {
-  color: #85cdfa;
-}
-
-.main-content#contact .inner-content .content #contact-info > .row,
-.main-content#contact .inner-content .content #contact-form > .row {
-  background: #232d48;
-}
-
-.main-content#contact .inner-content .content #contact-info h5:after,
-.main-content#contact .inner-content .content #contact-form h5:after {
-  background: #85cdfa;
-}
-
-.main-content#contact
-  .inner-content
-  .content
-  #contact-info
-  .list-contact-info
-  > ul
-  > li
-  .contact-info-name {
-  color: #04befe;
-}
-
-.main-content#contact
-  .inner-content
-  .content
-  #contact-info
-  .list-contact-info
-  > ul
-  > li
-  .value {
-  color: #d3d3d3;
-}
-
-.main-content#contact
-  .inner-content
-  .content
-  #contact-info
-  .list-contact-info
-  > ul
-  > li
-  .social-media
-  li
-  a {
-  background: #fff;
-  color: #232d48;
-  border-color: #fff;
-}
-
-.main-content#contact
-  .inner-content
-  .content
-  #contact-info
-  .list-contact-info
-  > ul
-  > li
-  .social-media
-  li
-  a
-  > .back {
-  background: #182137;
-  color: #fff;
-}
-
-#right-wrapper {
-  background: #fff;
 }

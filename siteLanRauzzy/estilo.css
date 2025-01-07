@@ -1,0 +1,42 @@
+﻿@charset "utf-8";
+/* Isto é um CSS animal */
+#topo,#menu,#conteudo,#rodape{border:#000 1px solid;
+     background-color:#Fff;}
+
+body{background-image:url(img/background.jpg)}
+
+#principal{width:800px;
+    margin:0 auto;}
+	
+#topo{min-height:100px;
+	margin-bottom:5px;}
+	
+#menu{height:500px;
+	width:160px;
+	float:left;}
+	
+#conteudo{border:#000 1px solid;
+    height:500px;
+	width:630px;
+	float:right;}
+
+#rodape{/*height:50px;*/
+	clear:both;}
+	
+a:link{color:#000;
+    text-decoration:none;}
+a:visited{color:#000;
+    text-decoration:none;}
+a:hover{color:#191970;
+    text-decoration:none;}
+a:active{color:#191970;
+    text-decoration:none;}
+
+.teste{margin:0;
+    padding:0;
+    border-bottom: 1px #000 solid;
+	list-style:none;}
+	
+/*style="text-shadow: #FFF 1px 1px 5px"*/
+h3{color:#00F;}
+h1{color:#306;}
